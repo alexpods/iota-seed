@@ -1,7 +1,7 @@
 # iota-seed
 [![Build Status](https://travis-ci.org/alexpods/iota-seed.svg?branch=master)](https://travis-ci.org/alexpods/iota-seed)
 
-Generates secure [IOTA](https://iota.org/) seed.
+Generates secure [IOTA](https://iota.org/) seeds
 
 ## Usage
 
@@ -54,14 +54,14 @@ cat /dev/urandom | LC_ALL=C tr -dc 'A-Z9' | fold -w 81 | head -n 1
 ### Windows
 
 It's not implemented and an error will be thrown if you try to generate a seed on Windows OS.
-Unfortunately I don't know a really secure way to generate a seed on Windows OS.
-`crypto.randomBytes` is preudo random and `powershell` has it's own flaws.
 
-But you still can use Docker to generate a seed on a Windows OS (see the example above)
+> Unfortunately I don't know a really secure way to generate a seed on Windows OS.
+> `crypto.randomBytes` is preudo random and `powershell` has it's own flaws.
+> But you still can use Docker to generate a seed on a Windows OS (see the example above)
 
 ## Donations
-By the way this is my walled:
+By the way this is my IOTA wallet address:
 ```
 ZPZ9BKPABOYXGXWQYZ9DDBBGALBIWQLNEHIOQJLMVQ9QPZMTBLCLZZHLYAMJFWQEVXAEFQFEDFLFZUUIXNSDDFULBX
 ```
-Feel free to send some iotas there is this package hellped you.
+Feel free to send some iotas there if this package helped you.

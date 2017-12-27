@@ -1,7 +1,7 @@
 {
   "name": "iota-seed",
   "version": "1.0.1",
-  "description": "Generates secure IOTA seed",
+  "description": "Generates secure IOTA seeds",
   "main": "index.js",
   "bin": "cli.js",
   "scripts": {
