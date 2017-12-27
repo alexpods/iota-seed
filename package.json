@@ -1,0 +1,37 @@
+{
+  "name": "iota-seed",
+  "version": "0.0.1",
+  "description": "Generates secure IOTA seed",
+  "main": "index.js",
+  "bin": "cli.js",
+  "scripts": {
+    "test": "mocha index.spec.js",
+    "test:watch": "npm run test -- --watch",
+    "generate": "node cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexpods/iota-seed.git"
+  },
+  "keywords": [
+    "iota",
+    "seed",
+    "seed generator",
+    "cryptocurrency"
+  ],
+  "author": "alexpods <alexey.podskrebyshev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexpods/iota-seed/issues"
+  },
+  "homepage": "https://github.com/alexpods/iota-seed#readme",
+  "dependencies": {
+    "optimist": "^0.6.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "leven": "^2.1.0",
+    "mocha": "^4.0.1",
+    "sinon": "^4.1.3"
+  }
+}
