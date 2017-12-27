@@ -17,7 +17,7 @@ YOURIOTASEED9999999999999999999999999 <- This is your IOTA seed
 
 Or you can generate a seed inside of your program:
 ```js
-const iotaSeed = require('iotaSeed')
+const iotaSeed = require('iota-seed')
 
 let seed = iotaSeed() // <- This is you IOTA seed
 ```
@@ -58,3 +58,10 @@ Unfortunately I don't know a really secure way to generate a seed on Windows OS.
 `crypto.randomBytes` is preudo random and `powershell` has it's own flaws.
 
 But you still can use Docker to generate a seed on a Windows OS (see the example above)
+
+## Donations
+By the way this is my walled:
+```
+ZPZ9BKPABOYXGXWQYZ9DDBBGALBIWQLNEHIOQJLMVQ9QPZMTBLCLZZHLYAMJFWQEVXAEFQFEDFLFZUUIXNSDDFULBX
+```
+Feel free to send some iotas there is this package hellped you.
