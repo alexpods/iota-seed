@@ -4,13 +4,13 @@
 Generates secure [IOTA](https://iota.org/) seeds.
 
 This package just uses recommended commands to generate a seed. If you don't trust
-this package or npm you can execute the commands manually (see Security section).
+this package or npm (and you shouldn't) you can execute the commands manually (see [Security](#security) section). If you decided to use this package, check the downloaded source codes after `npm install` (node_modules/iota-seed). They should be identical to the ones from this github repository.
 
 ## Usage
 
 You can generate a seed using Command Line Interface:
 ```
-> npm install -g iota-seed
+> npm install -g iota-seed # check node_modules/iota-seed source codes after this
 > iota-seed
 
 YOURIOTASEED9999999999999999999999999 <- This is your IOTA seed
@@ -25,24 +25,13 @@ const iotaSeed = require('iota-seed')
 let seed = iotaSeed() // <- This is you IOTA seed
 ```
 
-## Docker
-
-To generate a seed using Docker just run:
-```
-> docker run alexpods/iota-seed
-
-YOURIOTASEED9999999999999999999999999 <- This is your IOTA seed
-
->
-```
-
 ## Security
 
 This package uses the next commands for seed generation:
 
 ### Linux
 ```
-cat /dev/urandom |tr -dc A-Z9|head -c${1:-81}
+cat /dev/urandom | tr -dc A-Z9 | head -c${1:-81}
 ```
 
 ### Mac
