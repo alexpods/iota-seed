@@ -3,8 +3,8 @@
 
 Generates secure [IOTA](https://iota.org/) seeds.
 
-This package just uses recommended commands to generate a seed. If you don't trust
-this package or npm (and you shouldn't) you can execute the commands manually (see [Security](#security) section). If you decided to use this package, check the downloaded source codes after `npm install` (node_modules/iota-seed). They should be identical to the ones from this github repository.
+This package just uses [officially recommended commands](https://iota.readme.io/docs/securely-generating-a-seed) to generate a seed. If you don't trust
+this package or npm (**and you shouldn't**) you can execute the commands manually (see [Security](#security) section). If you decided to use this package, **check the downloaded source codes after `npm install` (node_modules/iota-seed)**. They should be identical to the ones from this github repository.
 
 ## Usage
 
