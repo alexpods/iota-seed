@@ -45,4 +45,3 @@ It's not implemented and an error will be thrown if you try to generate a seed o
 
 > Unfortunately I don't know a really secure way to generate a seed on Windows OS.
 > `crypto.randomBytes` is preudo random and `powershell` has it's own flaws.
-> But you still can use Docker to generate a seed on a Windows OS (see the example above)
